@@ -84,3 +84,4 @@ simplified_thai.addEventListener('change', function(){
 
 });
 
+
