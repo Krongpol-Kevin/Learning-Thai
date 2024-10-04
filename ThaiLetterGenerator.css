@@ -1,3 +1,15 @@
 body{
     background-color: #fefefe;
 }
+
+#prompt{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2em;
+    border-radius: 2em;
+    border: 1px black solid;
+}
