@@ -48,11 +48,11 @@ function Show_Answer() {
 // Function to remove the letter from the array
 let removeLetter = function(letter) {
   const index = thaiLetters.indexOf(letter);
+  console.log(`Deleted: ${thaiLetters[letter]}`);
+  console.log(`Deleted: ${thaiLettersEquivalent[letter]}`);
   if (index !== -1) {
     thaiLetters.splice(index, 1);
   }
-  console.log(`Deleted: ${thaiLetters[letter]}`);
-  console.log(`Deleted: ${thaiLettersEquivalent[letter]}`);
   const answerindex = thaiLettersEquivalent.indexOf(letter);
   if (answerindex !== -1) {
     thaiLetters.splice(index, 1);
