@@ -1,12 +1,19 @@
 const thaiLetters = [
-    " ก ", " ข ", " ฃ "
-    , " ค ", " ฅ ", " ฆ ", " ง ", " จ ", " ฉ ", " ช ", 
+    " ก ", " ข ", " ฃ ", " ค ", " ฅ ", " ฆ ", " ง ", " จ ", " ฉ ", " ช ", 
     " ซ ", " ฌ ", " ญ ", " ฎ ", " ฏ ", " ฐ ", " ฑ ", " ฒ ", " ณ ", " ด ", 
     " ต ", " ถ ", " ท ", " ธ ", " น ", " บ ", " ป ", " ผ ", " ฝ ", " พ ", 
     " ฟ ", " ภ ", " ม ", " ย ", " ร ", " ล ", " ว ", " ศ ", " ษ ", " ส ", 
     " ห ", " ฬ ", " อ ", " ฮ ",
 ]
-
+const thaiLettersEquivalent = [
+  'Ko Kai', 'Kho Khai', 'Kho Khuat', 'Kho Khwai', 'Kho Khon', 'Kho ra khang',
+  'Ngo ngu', 'Cho Chan', 'Cho Ching', 'Cho Chang', 'So So', 'Cho Choe',
+  'Yo Ying', 'Do Chada', 'To Pahtak', 'Tho Than', 'Tho Montho', 'Tho Puthao',
+  'No Nen', 'Do Dek', 'To Tao', 'Tho Thung', 'Tho Thahan', 'Tho Thong', 'No Nu',
+  'Bo Baimai', 'Po Plaa', 'Pho Phueng', 'Fo Fa', 'Pho Phan', 'Fo Fan', 'Pho Samphao',
+  'Mo Ma', 'Yo Yak', 'Ro Ruea', 'Lo Ling', 'Wo Waen', 'So Sala', 'So Ruesi', 'So Suea',
+  'Ho Hip', 'Lo Chu La', 'O Ang', 'Ho Nokhuk'
+]
 
 // // console.log(random_index_number)//testing
 
@@ -22,9 +29,20 @@ let randomize = function() {
     // Update the h1 tag with the new letter
     document.getElementById('Thai-letter').innerHTML = randomLetter;
     
-    // Show the button group
-    document.getElementById('button-group').classList.remove('Hidden');
+    document.getElementById('Generate').classList.add('Hidden');
+    
+    document.getElementById('Prompt-message').classList.add('Hidden');
+    setTimeout(Show_Answer, 10000)//sets timer to 10 secs before showing answer
   }
+}
+
+//SHOW ANSWER after 10 seconds
+function Show_Answer() {
+  // Show the button group
+  document.getElementById('Prompt-message').classList.remove('Hidden');
+  const currentLetter = document.getElementById('Thai-letter').innerHTML;
+  const indexOfCurrentLetter = thaiLetters.indexOf(currentLetter);
+  document.getElementById('Answer').innerHTML = thaiLettersEquivalent[indexOfCurrentLetter];
 }
 
 // Function to remove the letter from the array
@@ -36,8 +54,8 @@ let removeLetter = function(letter) {
   console.log(`Remaining letters: ${thaiLetters.length}`);
 }
 
-// Initialize the button group as hidden
-document.getElementById('button-group').classList.add('Hidden');
+// Initialize the prompt  as hidden
+document.getElementById('Prompt-message').classList.add('Hidden');
 
 // Add event listener to the Generate button
 document.getElementById('Generate').addEventListener('click', randomize);
