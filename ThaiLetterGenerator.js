@@ -52,7 +52,7 @@ let removeLetter = function(letter) {
     thaiLetters.splice(index, 1);
   }
   console.log(`Remaining letters: ${thaiLetters.length}`);
-  const answerindex = thaiLettersEquivalent(letter);
+  const answerindex = thaiLettersEquivalent.indexOf(letter);
   if (answerindex !== -1) {
     thaiLetters.splice(index, 1);
   }
