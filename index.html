@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <!-- <link rel="stylesheet" href="ThaiLetterGenerator.css"> -->
+    <!-- thai font links -->
+    
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Roboto:wght@400;500;900&display=swap');
         body{
             background-color: #fff1dcbb;
         }
@@ -17,15 +21,26 @@
             width: 75%;
             justify-content: center;
             align-items: center;
-            margin: auto;
+            margin: 1em auto;
             padding: 2em;
             border-radius: 2em;
             border: 10px black solid;
             text-align: center;
-
+        }
+        .simplified-thai{
+            font-family: "Noto Sans Thai", sans-serif;
+            font-optical-sizing: auto;
         }
         #prompt #letter-box h1{
             font-size: 4em;
+        }
+
+        button{
+            padding:1em;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: #fff1dcbb;
         }
     </style>
 </head>
@@ -35,6 +50,9 @@
     <p>Once you have guessed all the letters. You will have to restart/refresh the site to start over again.</p>
     <p></p>
     <p>Only thai consonant letters will show.</p>
+    <p>If you want to use the simplified thai letters, click the checkbox below</p>
+    <input type="checkbox" id="simplified-thai" name="simplified-thai-checkbox">
+    <label for="simplified-thai-checkbox">Simplified Thai</label>
 
     <div id="prompt">
         <div id="letter-box">
