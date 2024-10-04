@@ -32,7 +32,7 @@ let randomize = function() {
     document.getElementById('Generate').classList.add('Hidden');
     
     document.getElementById('Prompt-message').classList.add('Hidden');
-    setTimeout(Show_Answer, 10000)//sets timer to 10 secs before showing answer
+    setTimeout(Show_Answer, 1000)//sets timer to 10 secs before showing answer
   }
 }
 
@@ -40,22 +40,22 @@ let randomize = function() {
 function Show_Answer() {
   // Show the button group
   document.getElementById('Prompt-message').classList.remove('Hidden');
-  const currentLetter = document.getElementById('Thai-letter').innerHTML;
-  const indexOfCurrentLetter = thaiLetters.indexOf(currentLetter);
+  const current_Letter = document.getElementById('Thai-letter').innerHTML;
+  const indexOfCurrentLetter = thaiLetters.indexOf(current_Letter);
   document.getElementById('Answer').innerHTML = thaiLettersEquivalent[indexOfCurrentLetter];
 }
 
 // Function to remove the letter from the array
 let removeLetter = function(letter) {
   const index = thaiLetters.indexOf(letter);
-  console.log(`Deleted: ${thaiLetters[letter]}`);
-  console.log(`Deleted: ${thaiLettersEquivalent[letter]}`);
+  console.log(`Deleted: ${letter}`);
+  console.log(`Deleted: ${letter}`);
   if (index !== -1) {
     thaiLetters.splice(index, 1);
   }
   const answerindex = thaiLettersEquivalent.indexOf(letter);
   if (answerindex !== -1) {
-    thaiLetters.splice(index, 1);
+    thaiLettersEquivalent.splice(answerindex, 1);
   }
 }
 
