@@ -53,7 +53,9 @@ let removeLetter = function(letter) {
   if (index !== -1) {
     thaiLetters.splice(index, 1);
   }
-  const answerindex = thaiLettersEquivalent.indexOf(letter);
+}
+let removecurrentAnswer = function(currentAnswer){
+  const answerindex = thaiLettersEquivalent.indexOf(currentAnswer);
   if (answerindex !== -1) {
     thaiLettersEquivalent.splice(answerindex, 1);
   }
@@ -69,6 +71,8 @@ document.getElementById('Generate').addEventListener('click', randomize);
 document.getElementById('Guessed').addEventListener('click', function() {
   const currentLetter = document.getElementById('Thai-letter').innerHTML;
   removeLetter(currentLetter);
+  const currentAnswer = document.getElementById('Answer').innerHTML;
+  removecurrentAnswer(currentAnswer);
   randomize();
 });
 
