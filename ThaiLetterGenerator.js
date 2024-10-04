@@ -32,7 +32,7 @@ let randomize = function() {
     document.getElementById('Generate').classList.add('Hidden');
     
     document.getElementById('Prompt-message').classList.add('Hidden');
-    setTimeout(Show_Answer, 1000)//sets timer to 10 secs before showing answer
+    setTimeout(Show_Answer, 5000)//sets timer to 5 secs before showing answer
   }
 }
 
