@@ -51,7 +51,8 @@ let removeLetter = function(letter) {
   if (index !== -1) {
     thaiLetters.splice(index, 1);
   }
-  console.log(`Remaining letters: ${thaiLetters.length}`);
+  console.log(`Deleted: ${thaiLetters[letter]}`);
+  console.log(`Deleted: ${thaiLettersEquivalent[letter]}`);
   const answerindex = thaiLettersEquivalent.indexOf(letter);
   if (answerindex !== -1) {
     thaiLetters.splice(index, 1);
