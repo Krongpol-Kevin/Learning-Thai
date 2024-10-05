@@ -1,4 +1,4 @@
-const thaiLetters = [
+]const thaiLetters = [
   // consonants
     " ก ", " ข ", " ฃ ", " ค ", " ฅ ", " ฆ ", " ง ", " จ ", " ฉ ", " ช ", 
     " ซ ", " ฌ ", " ญ ", " ฎ ", " ฏ ", " ฐ ", " ฑ ", " ฒ ", " ณ ", " ด ", 
@@ -7,11 +7,11 @@ const thaiLetters = [
     " ห ", " ฬ ", " อ ", " ฮ ",
     // vowels
     " อะ ", " อา ", " อิ ", " อี ", " อึ ", " อือ ", " อุ ",
-     " อู ", " เอะ ", " เอ ", 
+    " อู ", " เอะ ", " เอ ", 
     " แอะ ", " แอ ", " โอะ ", " โอ ", " เอาะ ", " ออ ",
-     " เออะ ", " เออ ", " เอียะ ", " เอีย ", 
+    " เออะ ", " เออ ", " เอียะ ", " เอีย ", 
     " เอือะ ", " เอือ ", " อัวะ ", " อัว ", " อำ ", " เอย ",
-     " ไอ ", " ใอ ", " อวย ", " ออย ", 
+    " ไอ ", " ใอ ", " อวย ", " ออย ", 
     " โอย ", " เอา ", " อิว ", " อุย "
     //vowels may not be complete yet
 ]
@@ -32,7 +32,7 @@ const thaiLettersEquivalent = [
   " sara aw ", " sara aw ",
   " sara oe (uh)", " sara er ", " sara ia ", " sara iaa ", 
   " sara uea ", " sara ueaa ", " sara ua ", " sara uaa ",
-   " sara am ", " sara oei ",
+  " sara am ", " sara oei ",
   " sara ai mai malai ", " sara ai mai muan ", 
   " sara uay ", " sara oy ", 
   " sara ooy ", " sara ao ", " sara iw  ", " sara ui "
