@@ -1,21 +1,44 @@
 const thaiLetters = [
+  // consonants
     " ก ", " ข ", " ฃ ", " ค ", " ฅ ", " ฆ ", " ง ", " จ ", " ฉ ", " ช ", 
     " ซ ", " ฌ ", " ญ ", " ฎ ", " ฏ ", " ฐ ", " ฑ ", " ฒ ", " ณ ", " ด ", 
     " ต ", " ถ ", " ท ", " ธ ", " น ", " บ ", " ป ", " ผ ", " ฝ ", " พ ", 
     " ฟ ", " ภ ", " ม ", " ย ", " ร ", " ล ", " ว ", " ศ ", " ษ ", " ส ", 
     " ห ", " ฬ ", " อ ", " ฮ ",
+    // vowels
+    " อะ ", " อา ", " อิ ", " อี ", " อึ ", " อือ ", " อุ ",
+     " อู ", " เอะ ", " เอ ", 
+    " แอะ ", " แอ ", " โอะ ", " โอ ", " เอาะ ", " ออ ",
+     " เออะ ", " เออ ", " เอียะ ", " เอีย ", 
+    " เอือะ ", " เอือ ", " อัวะ ", " อัว ", " อำ ", " เอย ",
+     " ไอ ", " ใอ ", " อวย ", " ออย ", 
+    " โอย ", " เอา ", " อิว ", " อุย "
+    //vowels may not be complete yet
 ]
 const thaiLettersEquivalent = [
+  //consonants
   'Ko Kai', 'Kho Khai', 'Kho Khuat', 'Kho Khwai', 'Kho Khon', 'Kho ra khang',
   'Ngo ngu', 'Cho Chan', 'Cho Ching', 'Cho Chang', 'So So', 'Cho Choe',
   'Yo Ying', 'Do Chada', 'To Pahtak', 'Tho Than', 'Tho Montho', 'Tho Puthao',
   'No Nen', 'Do Dek', 'To Tao', 'Tho Thung', 'Tho Thahan', 'Tho Thong', 'No Nu',
   'Bo Baimai', 'Po Plaa', 'Pho Phueng', 'Fo Fa', 'Pho Phan', 'Fo Fan', 'Pho Samphao',
   'Mo Ma', 'Yo Yak', 'Ro Ruea', 'Lo Ling', 'Wo Waen', 'So Sala', 'So Ruesi', 'So Suea',
-  'Ho Hip', 'Lo Chu La', 'O Ang', 'Ho Nokhuk'
+  'Ho Hip', 'Lo Chu La', 'O Ang', 'Ho Nokhuk',
+  //vowels
+  " sara a", " sara aa", " sara i ", " sara ii",
+  " sara ue  ", " sara uee ", " sara u ",
+  " sara uu ", " sara e ", " sara ee ", 
+  " sara ae ", " sara aee ", " sara o ", " sara oo ",
+  " sara aw ", " sara aw ",
+  " sara oe (uh)", " sara er ", " sara ia ", " sara iaa ", 
+  " sara uea ", " sara ueaa ", " sara ua ", " sara uaa ",
+   " sara am ", " sara oei ",
+  " sara ai mai malai ", " sara ai mai muan ", 
+  " sara uay ", " sara oy ", 
+  " sara ooy ", " sara ao ", " sara iw  ", " sara ui "
+  //vowels may not be complete yet
 ]
 
-// // console.log(random_index_number)//testing
 
 
 // Function to generate a random Thai letter
